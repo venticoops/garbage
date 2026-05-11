@@ -45,6 +45,8 @@ button {
     border: none;
     background-color: var(--main-color);
     transition: linear 0.5s;
+    color: white;
+    
 
 }
 
@@ -52,10 +54,6 @@ button:hover {
     background-color: var(--main-color-hover);
 }
 
-button a {
-    text-decoration: none;
-    color: white;
-}
 
 .chars-page {
     display: flex;
@@ -83,15 +81,9 @@ flex-direction: column;}
 
 .char-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-areas: ;
+    gap: 0.1px;
 }
-
-.char-gallery img {
-    width: 100%;
-    height: auto;
-}
-
 
 .img-side-char {
     width: 100px;
@@ -103,10 +95,6 @@ flex-direction: column;}
     border-radius: 50px;
     border: none;
     background-color: var(--main-color);
-}
-
-.home a, .exit a {
-    text-decoration: none;
     color: white;
 }
 
@@ -115,3 +103,5 @@ flex-direction: column;}
     top: 10px;
     right: 10px;
 }
+
+
