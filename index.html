@@ -7,21 +7,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <script>
+
+    function showCharacterInfo(id) {
+        const charInfo = document.getElementById('side-chars-abt')
+    }
+
+    function showPage(type) {
+
+        const mainPage = document.getElementById('main-page');
+        const charsPage = document.getElementById('chars-page');
+        const sideChars = document.getElementById('side-chars');
+
+        /* remove active class from all pages */
+        mainPage.classList.remove('active');
+        charsPage.classList.remove('active');
+        sideChars.classList.remove('active');
+
+        /* show selected page */
+        if (type === 'main-ocs') {
+            charsPage.classList.add('active');
+        }
+
+        else if (type === 'side-ocs') {
+            sideChars.classList.add('active');
+        }
+
+        else if (type === 'home') {
+            mainPage.classList.add('active');
+        }
+    }
+
+    function returnHome() {
+        showPage('home');
+    }
+
+    function turnBack(type) {
+
+        if (type === 'main-ocs') {
+            showPage('main-ocs');
+        }
+
+        else if (type === 'home') {
+            showPage('home');
+        }
+    }
+
+</script>
     
     <div class="contenedor">
-        <main class="main-page" id="main-page">
+        <main class="main-page active" id="main-page">
             <img src="https://upload-os-bbs.hoyolab.com/upload/2026/04/21/375894429/60b106464525bc9fb06a90061f14fed2_3492140003653353551.webp?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70" alt="img" class="main-page-img">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, facilis. Id perferendis ducimus necessitatibus. Quasi officia, quae fugiat numquam provident facere molestiae asperiores saepe dicta doloremque magni, eligendi, hic mollitia.
             </p>
             <section class="main-buttons">
-                <button>
+                <button onclick="showPage('main-ocs')">
                     ocs
                 </button>
-                <button>
+                <button onclick="showPage('world')">
                     world
                 </button>
-                <button>
+                <button onclick="showPage('sfs')">
                     sfs
                 </button>
             </section>            
@@ -29,11 +77,10 @@
 
         <main class="chars-page" id="chars-page">
             <div class="controls">
-                <button class="exit">
+                <button class="exit" onclick="turnBack('home')">
                     x
-    
                 </button>
-                <button class="home">
+                <button class="home" onclick="returnHome()">
                     home
                 </button>
             </div>
@@ -81,16 +128,16 @@
                     </p>
                 </article>
             </section>
-            <button>more bbgs</button>
+            <button onclick="showPage('side-ocs')">more bbgs</button>
         </main>
 
         <main id="side-chars" class="side-chars">
             <div class="controls">
 
-                <button class="exit">
+                <button class="exit" onclick="turnBack('main-ocs')">
                     x
                 </button>
-                <button class="home">
+                <button class="home" onclick="returnHome()">
                     home
                 </button>
             </div>
@@ -103,42 +150,31 @@
             </section>
             
             <section class="char-gallery">
-                <a href="">
-                    <img class="img-side-char" id="1" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="2" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="3" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="4" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="5" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="6" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="7" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="8" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="9" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="10" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="11" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
-                <a href="">
-                    <img class="img-side-char" id="12" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
-                </a>
+                <img class="img-side-char" id="charac" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                
+                <img class="img-side-char" id="2" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                
+                <img class="img-side-char" id="3" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                
+                <img class="img-side-char" id="4" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                
+                <img class="img-side-char" id="5" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                
+                <img class="img-side-char" id="6" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                
+                
+                <img class="img-side-char" id="7" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                
+                
+                <img class="img-side-char" id="8" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                <img class="img-side-char" id="9" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                <img class="img-side-char" id="10" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                
+                <img class="img-side-char" id="11" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                
+                
+                <img class="img-side-char" id="12" src="https://i.pinimg.com/236x/a6/b0/7b/a6b07beefc78278250b1f45c2f36b3b6.jpg" alt="img">
+                
             </section>
 
         </main>
