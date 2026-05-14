@@ -6,55 +6,9 @@
     <title>Oc webbie</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body> 
  
-    <script>
-
-    function showCharacterInfo(id) {
-        const charInfo = document.getElementById('side-chars-abt')
-    }
-
-    function showPage(type) {
-
-        const mainPage = document.getElementById('main-page');
-        const charsPage = document.getElementById('chars-page');
-        const sideChars = document.getElementById('side-chars');
-
-        /* remove active class from all pages */
-        mainPage.classList.remove('active');
-        charsPage.classList.remove('active');
-        sideChars.classList.remove('active');
-
-        /* show selected page */
-        if (type === 'main-ocs') {
-            charsPage.classList.add('active');
-        }
-
-        else if (type === 'side-ocs') {
-            sideChars.classList.add('active');
-        }
-
-        else if (type === 'home') {
-            mainPage.classList.add('active');
-        }
-    }
-
-    function returnHome() {
-        showPage('home');
-    }
-
-    function turnBack(type) {
-
-        if (type === 'main-ocs') {
-            showPage('main-ocs');
-        }
-
-        else if (type === 'home') {
-            showPage('home');
-        }
-    }
-
-</script>
+    <script src="script.js"></script>
     
     <div class="contenedor">
         <main class="main-page active" id="main-page">
@@ -87,42 +41,42 @@
             <h1>MAIN CHARS</h1>
             <section>
                 <article>
-                    <a href="">
-                        <img src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                    </a>
+                    
+                    <img src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                    
                     
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur perferendis nemo incidunt? Dolores exercitationem aliquam soluta pariatur quod expedita ex perspiciatis minima eveniet! Sunt odio consequuntur non itaque totam inventore.
                     </p>
                 </article>
                 <article>
-                    <a href="">
-                        <img src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                    </a>
+                    
+                    <img src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                    
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores quae laboriosam enim architecto fugit harum unde doloremque labore repellat debitis incidunt similique quos laudantium, at quam, reprehenderit fuga. Explicabo?
                     </p>
                 </article>
                 <article>
-                    <a href="">
-                        <img src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                    </a>
+                    
+                    <img src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                    
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quasi iste facilis recusandae cum nulla laborum veniam incidunt aperiam eum doloribus quam hic illo suscipit, dolore odit necessitatibus amet perspiciatis.
                     </p>
                 </article>
                 <article>
-                    <a href="">
-                        <img src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                    </a>
+                    
+                    <img src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                    
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus delectus eos voluptas temporibus tenetur vitae rerum eligendi excepturi recusandae amet! Libero sint ipsum expedita saepe totam eius placeat nam magnam.
                     </p>
                 </article>
                 <article>
-                    <a href="">
-                        <img src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                    </a>
+                    
+                    <img src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                    
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae iste dolores sit ut, odio, voluptatum maxime exercitationem laborum impedit cum, incidunt mollitia ea est ratione voluptates accusamus dolor sequi officiis.
                     </p>
@@ -142,38 +96,39 @@
                 </button>
             </div>
             <section id="side-chars-abt" class="side-chars-abt">
-                <h2>SIDE H***</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In dignissimos nam soluta repellat vero repellendus labore perspiciatis aliquid eos deleniti dolorum doloribus dicta sit odio porro voluptates, repudiandae at quam.</p>
+                
+                <h2 id="nombre">SIDE H***</h2>
+                <p id="info-one">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In dignissimos nam soluta repellat vero repellendus labore perspiciatis aliquid eos deleniti dolorum doloribus dicta sit odio porro voluptates, repudiandae at quam.</p>
                 <br>
-                <h2>more stuff</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur suscipit doloribus totam facere? Expedita repudiandae qui facilis exercitationem porro, praesentium modi quo vitae perspiciatis, dolorum, excepturi alias? Inventore, explicabo!</p>
+                <h2>Lore and Trivia</h2>
+                <p id="info-two">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur suscipit doloribus totam facere? Expedita repudiandae qui facilis exercitationem porro, praesentium modi quo vitae perspiciatis, dolorum, excepturi alias? Inventore, explicabo!</p>
             </section>
             
             <section class="char-gallery">
-                <img class="img-side-char" id="charac" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                <img class="img-side-char" onclick="change_oc_data(1)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
                 
-                <img class="img-side-char" id="2" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                <img class="img-side-char" onclick="change_oc_data(2)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
                 
-                <img class="img-side-char" id="3" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                <img class="img-side-char" onclick="change_oc_data(3)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
                 
-                <img class="img-side-char" id="4" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                <img class="img-side-char" onclick="change_oc_data(4)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
                 
-                <img class="img-side-char" id="5" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                <img class="img-side-char" onclick="change_oc_data(5)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
                 
-                <img class="img-side-char" id="6" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                
-                
-                <img class="img-side-char" id="7" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                <img class="img-side-char" onclick="change_oc_data(6)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
                 
                 
-                <img class="img-side-char" id="8" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                <img class="img-side-char" id="9" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                <img class="img-side-char" id="10" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilterg" alt="img">
-                
-                <img class="img-side-char" id="11" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilterg" alt="img">
+                <img class="img-side-char" onclick="change_oc_data(7)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
                 
                 
-                <img class="img-side-char" id="12" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilterg" alt="img">
+                <img class="img-side-char" onclick="change_oc_data(8)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                <img class="img-side-char" onclick="change_oc_data(9)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
+                <img class="img-side-char" onclick="change_oc_data(10)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilterg" alt="img">
+                
+                <img class="img-side-char" onclick="change_oc_data(11)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilterg" alt="img">
+                
+                
+                <img class="img-side-char" onclick="change_oc_data(12)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilterg" alt="img">
                 
             </section>
 
