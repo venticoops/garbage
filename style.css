@@ -68,12 +68,20 @@ button:hover {
     display: block;
     margin: 0 auto;
     width: 200px;
+    transition: 0.3s ease;
+
 }
 
 .chars-page section {
     display: flex;
     gap: 20px;
     text-align: justify;
+}
+
+.chars-page article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .side-chars {
@@ -98,7 +106,7 @@ flex-direction: column;
     transition: 0.3s ease;
 }
 
-.img-side-char:hover {
+.img-side-char:hover, .chars-page img:hover {
     transform: scale(1.05);
 }
 
@@ -132,7 +140,8 @@ flex-direction: column;
 /* all pages */
 .main-page,
 .chars-page,
-.side-chars {
+.side-chars,
+.individual-ocs {
 
     position: absolute;
     inset: 0;

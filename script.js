@@ -1,19 +1,18 @@
 
 
-function showCharacterInfo(id) {
-    const charInfo = document.getElementById('side-chars-abt')
-}
 
-function showPage(type) {
+function showPage(type, character = null) {
 
     const mainPage = document.getElementById('main-page');
     const charsPage = document.getElementById('chars-page');
     const sideChars = document.getElementById('side-chars');
+    const eachOc = document.getElementById('individualOc');
 
     /* remove active class from all pages */
     mainPage.classList.remove('active');
     charsPage.classList.remove('active');
     sideChars.classList.remove('active');
+    eachOc.classList.remove('active');
 
     /* show selected page */
     if (type === 'main-ocs') {
@@ -26,6 +25,45 @@ function showPage(type) {
 
     else if (type === 'home') {
         mainPage.classList.add('active');
+    }
+    else if (type === 'main-oc') {
+        const bigImage = document.getElementById('big-image');
+        const imgWide = document.getElementById('img-wide');
+        const imgSquare = document.getElementById('img-square');
+        const mainOcExtra = document.getElementById('main-oc-extra');
+        const mainOcTrivia = document.getElementById('main-oc-trivia');
+        const mainOcTitleLittle = document.getElementById('main-oc-title-little');
+        const mainOcTitle = document.getElementById('main-oc-title');
+        const mainOcAbt = document.getElementById('main-oc-abt');
+        const mainOcImgHead = document.getElementById('main-oc-img-head');
+        const mainOcImgSquare = document.getElementById('main-oc-img-square');
+        const mainOcLore = document.getElementById('main-oc-lore');
+        const mainOcRels = document.getElementById('main-oc-rels');
+        eachOc.classList.add('active');
+
+        const main_oc_data = {
+
+        "oc_1":{
+            "nombre":"Oc_1",
+            "abt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod suscipit risus, eget hendrerit magna. Morbi sed tincidunt sapien. Nullam at mauris tincidunt, consectetur quam quis, venenatis ex. Donec sed ipsum urna. Proin blandit justo eget libero tempus, non blandit risus blandit. Vivamus viverra mollis enim. Sed a feugiat sapien, non vulputate est.",
+            "extra": "Integer efficitur sit amet orci in ultrices. Etiam ut scelerisque diam, a aliquet massa. Phasellus ",
+            "trivia": "Integer efficitur sit amet orci in ultrices. Etiam ut scelerisque diam, a aliquet massa. Phasellus rhoncus nisi ac posuere venenatis. Nulla facilisi. Donec at",
+            "lore": "ler efficitur sit amet orci in ultrices. Etiam ut scelerisque diam, a aliquet massa. Phasellus rhoncus er efficitur sit amet orci in ultrices. Etiam ut scelerisque diam, a aliquet massa. Phasellus rhoncus",
+            
+            "imgs": {
+                "main": "https://files.catbox.moe/zk61g9.jpg",
+                "square":"https://files.catbox.moe/zk61g9.jpg",
+                "wide":"https://files.catbox.moe/zk61g9.jpg",
+                "square":"https://files.catbox.moe/zk61g9.jpg",
+                "square":"https://files.catbox.moe/zk61g9.jpg"
+
+            }
+        }
+        }
+        if (character === 1){
+
+        }
+
     }
 }
 
