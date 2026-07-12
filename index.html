@@ -3,184 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oc webbie</title>
+    <title>oc webbie</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body> 
- 
-    <script src="script.js"></script>
-    
+<body>
     <div class="contenedor">
-        <main class="main-page active" id="main-page">
-            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/four-happy-cats-website-banner-susan-schmitz.jpg" alt="img" class="main-page-img">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, facilis. Id perferendis ducimus necessitatibus. Quasi officia, quae fugiat numquam provident facere molestiae asperiores saepe dicta doloremque magni, eligendi, hic mollitia.
-            </p>
-            <section class="main-buttons">
-                <button onclick="showPage('main-ocs')">
-                    ocs
-                </button>
-                <button onclick="showPage('world')">
-                    world
-                </button>
-                <button onclick="showPage('sfs')">
-                    sfs
-                </button>
-            </section>            
-        </main>
+        <div class="buttons">
+            <button id="world" onclick="change(0)">World</button>
+            <button id="owners" onclick="change(1)">Owners</button>
+            <button id="chars" onclick="change(2)">Chars</button>
+            <button id="back" class="back">«</button>
+            <button id="home" onclick="change(3)" class="back">🏠︎</button>
+        </div>
+        
+        <main class="uno">
 
-        <main class="chars-page" id="chars-page">
-            <div class="controls">
-                <button class="exit" onclick="turnBack('home')">
-                    x
-                </button>
-                <button class="home" onclick="returnHome()">
-                    home
-                </button>
-            </div>
-            <h1>MAIN CHARS</h1>
+            <img id="page-image" class="main-page-img" src="https://i.pinimg.com/736x/91/fb/1a/91fb1a368319c56eb90754730e81c34c.jpg" alt="img">
+
+            <span>
+                <h1 id="page-title">ddd</h1>
+                <p id="page-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae, alias aliquid possimus natus tempore necessitatibus assumenda maxime incidunt debitis, accusamus expedita doloremque aspernatur nisi reiciendis dolorum vel voluptas sint.</p>
+                <br>
+                <span class="span" id="span"></span>
+            </span>
+
+        </main>
+        <main class="dos hidden">
+            <h3>Mainchars</h3>
             <section>
                 <article>
-                    
-                    <img onclick="showPage('main-oc', 1)" src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                    
-                    
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur perferendis nemo incidunt? Dolores exercitationem aliquam soluta pariatur quod expedita ex perspiciatis minima eveniet! Sunt odio consequuntur non itaque totam inventore.
-                    </p>
+                    <img onclick="change(4)" src="https://i.pinimg.com/736x/2c/48/bb/2c48bbf5f4af6a43df15fce44a067b42.jpg" alt="img">
+                    <br><br>
+                    <h3>p1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora doloribus totam consequuntur ea corrupti unde vitae laudantium veniam maxime doloremque, quam quisquam saepe quae. Dignissimos eveniet deserunt ipsum voluptates.</p>
                 </article>
                 <article>
-                    
-                    <img onclick="showPage('main-oc', 2)" src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                    
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores quae laboriosam enim architecto fugit harum unde doloremque labore repellat debitis incidunt similique quos laudantium, at quam, reprehenderit fuga. Explicabo?
-                    </p>
+                    <img onclick="change(5)" src="https://i.pinimg.com/736x/2c/48/bb/2c48bbf5f4af6a43df15fce44a067b42.jpg" alt="img">
+                    <br><br>
+                    <h3>p2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit libero officiis doloribus, ducimus recusandae minus expedita molestias ipsam neque iure distinctio quos esse, porro est, illum voluptatem in sit.</p>
                 </article>
                 <article>
-                    
-                    <img onclick="showPage('main-oc', 3)" src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                    
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quasi iste facilis recusandae cum nulla laborum veniam incidunt aperiam eum doloribus quam hic illo suscipit, dolore odit necessitatibus amet perspiciatis.
-                    </p>
+                    <img onclick="showMain(mainCuatro)" src="https://i.pinimg.com/736x/2c/48/bb/2c48bbf5f4af6a43df15fce44a067b42.jpg" alt="img">
+                    <br><br>
+                    <h3>p3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A libero suscipit natus consequatur repellat commodi cupiditate expedita tempore necessitatibus, et debitis nobis maiores esse inventore praesentium ipsum assumenda tempora ullam.</p>
                 </article>
                 <article>
-                    
-                    <img onclick="showPage('main-oc', 4)" src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                    
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus delectus eos voluptas temporibus tenetur vitae rerum eligendi excepturi recusandae amet! Libero sint ipsum expedita saepe totam eius placeat nam magnam.
-                    </p>
+                    <img onclick="showMain(mainCuatro)" src="https://i.pinimg.com/736x/2c/48/bb/2c48bbf5f4af6a43df15fce44a067b42.jpg" alt="img">
+                    <br><br>
+                    <h3>p4</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet sapiente facere facilis, itaque dolor saepe. Quidem nisi excepturi reiciendis ex fugit eligendi beatae, temporibus dolorum, quam dolorem perferendis at eum?</p>
                 </article>
                 <article>
-                    
-                    <img onclick="showPage('main-oc', 5)" src="https://tr.rbxcdn.com/180DAY-a6a082d1ce9425fefee57d1b4500f248/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                    
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae iste dolores sit ut, odio, voluptatum maxime exercitationem laborum impedit cum, incidunt mollitia ea est ratione voluptates accusamus dolor sequi officiis.
-                    </p>
+                    <img onclick="showMain(mainCuatro)" src="https://i.pinimg.com/736x/2c/48/bb/2c48bbf5f4af6a43df15fce44a067b42.jpg" alt="img">
+                    <br><br>
+                    <h3>p5</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, reprehenderit id. Magnam laboriosam esse rem repudiandae totam aliquam beatae, perferendis animi quasi temporibus? Cum aperiam voluptates facilis tenetur ad magni.</p>
                 </article>
             </section>
-            <button onclick="showPage('side-ocs')">more bbgs</button>
+            <button id="forward">hhhhhh</button>
         </main>
-
-        <main id="side-chars" class="side-chars">
-            <div class="controls">
-
-                <button class="exit" onclick="turnBack('main-ocs')">
-                    x
-                </button>
-                <button class="home" onclick="returnHome()">
-                    home
-                </button>
-            </div>
-            <section id="side-chars-abt" class="side-chars-abt">
-                
-                <h2 id="nombre">SIDE H***</h2>
-                <p id="info-one">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In dignissimos nam soluta repellat vero repellendus labore perspiciatis aliquid eos deleniti dolorum doloribus dicta sit odio porro voluptates, repudiandae at quam.</p>
-                <br>
-                <h2>Lore and Trivia</h2>
-                <p id="info-two">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur suscipit doloribus totam facere? Expedita repudiandae qui facilis exercitationem porro, praesentium modi quo vitae perspiciatis, dolorum, excepturi alias? Inventore, explicabo!</p>
-            </section>
+        <main class="tres hidden">
             
-            <section class="char-gallery">
-                <img class="img-side-char" onclick="change_oc_data(1)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                
-                <img class="img-side-char" onclick="change_oc_data(2)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                
-                <img class="img-side-char" onclick="change_oc_data(3)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                
-                <img class="img-side-char" onclick="change_oc_data(4)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                
-                <img class="img-side-char" onclick="change_oc_data(5)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                
-                <img class="img-side-char" onclick="change_oc_data(6)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                
-                
-                <img class="img-side-char" onclick="change_oc_data(7)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                
-                
-                <img class="img-side-char" onclick="change_oc_data(8)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                <img class="img-side-char" onclick="change_oc_data(9)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilter" alt="img">
-                <img class="img-side-char" onclick="change_oc_data(10)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilterg" alt="img">
-                
-                <img class="img-side-char" onclick="change_oc_data(11)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilterg" alt="img">
-                
-                
-                <img class="img-side-char" onclick="change_oc_data(12)" src="https://tr.rbxcdn.com/180DAY-d4a6d1564bf7c0e65447501bdb3cc584/420/420/FaceAccessory/Webp/noFilterg" alt="img">
-                
+            <section class="section" id="section">
+                <span id="galspan"></span>
+                <h1 id="galtitle">deaaa</h1>
+                <p id="galcontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, modi provident assumenda, repudiandae iure sequi esse nobis molestias odit sunt debitis voluptatibus natus quidem! Architecto itaque porro corporis illo id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ratione quis rem atque necessitatibus. Aspernatur, voluptas eligendi tempora, sed repellendus totam impedit nostrum accusamus ipsum nihil ut placeat quisquam natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis repudiandae, libero aspernatur odit, officia dolorum fugiat quos, repellendus voluptatem ipsum numquam. Error hic officia repellendus qui. Blanditiis, amet magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quod ratione corporis delectus dolorum cumque facilis illo, voluptas eveniet corrupti adipisci maiores reprehenderit ex quis consequatur debitis eius, iste ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, modi provident assumenda, repudiandae iure sequi esse nobis molestias odit sunt debitis voluptatibus natus quidem! Architecto itaque porro corporis illo id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ratione quis rem atque necessitatibus. Aspernatur, voluptas eligendi tempora, sed repellendus totam impedit nostrum accusamus ipsum nihil ut placeat quisquam natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis repudiandae, libero aspernatur odit, officia dolorum fugiat quos, repellendus voluptatem ipsum numquam. Error hic officia repellendus qui. Blanditiis, amet magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quod ratione corporis delectus dolorum cumque facilis illo, voluptas eveniet corrupti adipisci maiores reprehenderit ex quis consequatur debitis eius, iste ut.</p>
             </section>
 
-        </main>
-
-        <main class="individual-ocs" id="individualOc">
-
-            <div class="main-part">
-
-                <section>
-                    <img src="" alt="img" id="img-square">
-                    <p id="main-oc-abt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ratione iure possimus expedita dolore aut quaerat, atque aliquam dignissimos quos vitae reiciendis ipsum nisi nesciunt minima officiis natus tempora? Repudiandae!</p>
-                </section>
-
-                <section>
-
-                    <p id="main-oc-title-little">pekeño texti</p>
-                    <h1 id="main-oc-title">NOMBRE TITULAZO BONITO Y LINDO</h1>
-
-
-                </section>
-                <section>
-                    <p id="main-oc-trivia">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, ullam adipisci molestias esse corrupti neque, tenetur nobis at eveniet nulla error pariatur aliquid. Placeat alias earum asperiores a magnam consequuntur!</p>
-                    <article>
-                        <img id="img-wide" src="" alt="img">
-                        <p id="main-oc-extra">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                    </article>
-                </section>
-
-            </div>
-            <div class="side-part">
-                <img id="main-oc-img-head" src="" alt="img">
-                <p id="main-oc-lore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates vero eos odio ullam, totam quisquam nihil placeat nulla error! Quod voluptatum ab asperiores est culpa autem repellendus, id earum.</p>
-                <img id="main-oc-img-square" src="" alt="img">
-                <p id="main-oc-rels">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius adipisci magnam expedita veritatis recusandae reprehenderit officiis, saepe, fugiat beatae voluptatum repellendus accusantium voluptatibus? Quod repudiandae, voluptates quae doloribus autem dolorem!</p>
-            </div>
-
-            <img id="big-img" src="" alt="img" class="main-char-img-abt">
             
-            <div class="controls">
-                <button class="exit" onclick="turnBack('main-ocs')">
-                    x
-                </button>
-                <button class="home" onclick="returnHome()">
-                    home
-                </button>
+            <div class="gallery" id="gallery">
+                <div>PERSONAJE 1</div>
+                <div>PERSONAJE 2</div>
+                <div>PERSONAJE 3</div>
+                <div>PERSONAJE 4</div>
+                <div>PERSONAJE 5</div>
+                <div>PERSONAJE 6</div>
+                <div>PERSONAJE 7</div>
+                <div>PERSONAJE 8</div>
+                <div>PERSONAJE 9</div>
+                <div>PERSONAJE 10</div>
+                <div>PERSONAJE 11</div>
+                <div>PERSONAJE 12</div>
+                <div>PERSONAJE 13</div>
+                <div>PERSONAJE 14</div>
+                <div>PERSONAJE 15</div>
             </div>
+        </main>
+        <main class="cuatro hidden">
+            <h1 id="cuatro-char" class="titulo"></h1>
+            <img id="cuatro-main-img" class="imagen" src="" alt="img">
+            <section class="sectUno">
+                <article class="artUno">
+                    <img id="cuatro-icon" src="" alt="img">
+                    <p id="cuatro-icon-content"></p>
+                </article>
+                <article class="artDos">
+                    <p id="cuatro-text"></p>
+                </article>
+                <div class="line">
+
+                </div>
+                <article class="artTres">
+                    <img id="cuatro-banner" src="" alt="img">
+                    <p id="cuatro-banner-content"></p>
+                </article>
+            </section>
+            <section class="sectDos">
+                <img id="cuatro-side-banner" class="head" src="" alt="img">
+                <p id="cuatro-side-banner-content">
+                    
+                </p>
+                <span>
+                    <img id="cuatro-side-icon-one" src="" alt="img">
+                    <img id="cuatro-side-icon-two" src="" alt="img">
+                </span>
+                <p id="cuatro-side-icons-content">
+                    
+                </p>
+            </section>
+        </main>
+        <main class="cinco hidden">
+            <section>
+                <h1 id="cinco-title">hjcaksls</h1>
+                <p id="cinco-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur molestiae, suscipit exercitationem sequi laudantium, tenetur amet voluptatum dolorem officiis animi facilis voluptates nihil rerum repellendus quos molestias rem id. Repellat.</p>
+            </section>
+            <div id="map">
+                
+                <object type="image/svg+xml" data="img/jestenburr.svg" width="100%" height="100%"></object>
+                
+            </div>
+            
 
         </main>
-
-
     </div>
-
 </body>
 </html>
