@@ -328,6 +328,10 @@ z-index: 10;
 
 }
 
+object {
+    width: 500px;
+}
+
 svg {width: 500px;}
 
 path {

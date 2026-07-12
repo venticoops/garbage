@@ -177,6 +177,54 @@ const pages = {
     sideiconstext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ut minima sed ad cupiditate, nihil ab voluptatum blanditiis, incidunt in recusandae, eos veniam at. Magni doloribus neque fugiat at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita exercitationem assumenda officia harum nemo culpa doloribus a sit quas sapiente provident ratione fuga enim, veritatis facere id alias, cupiditate dolore? lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae et eum quibusdam aperiam voluptates, pariatur, vel possimus consequatur eveniet animi quas nam magni, eaque obcaecati molestiae corrupti asperiores nisi.',
     bgcolor: "#585858",
     bgcolorart: "#797979"
+  },
+  6: {
+    big: 'https://media.discordapp.net/attachments/1300454898403643464/1508525101836927027/image-Photoroom-103.png?ex=6a3eb97b&is=6a3d67fb&hm=98d3e74e9447dc519ede3ae1fddcdf169ce5a5765aff692228043101755a9e16&=&format=webp&quality=lossless&width=536&height=809',
+    title:'ajdkakf lmaomao wiwi',
+    icon: 'https://i.pinimg.com/736x/80/a4/b3/80a4b3b0725860703d772d74a558a175.jpg',
+    icontext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minus, voluptatum corporis, culpa unde animi delectus dignissimos itaque ad laboriosam laborum exercitationem nihil quam distinctio nostrum nisi. Soluta, recusandae unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum consequuntur deleniti, dolorum obcaecati inventore sed dolor animi distinctio nesciunt! Ex optio est ipsam ab vitae porro incidunt eaque mollitia totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi saepe cum vel placeat in aspernatur dicta repudiandae sunt voluptates rerum blanditiis, eum, hic tempore debitis nihil laboriosam neque ab recusandae.',
+    banner: 'https://i.pinimg.com/736x/b6/81/01/b68101b8720c2bab9594597887d63100.jpg',
+    bannertext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi expedita magnam sed mollitia quos tenetur ad ducimus, eius ut iure, rerum obcaecati odio dicta ea facilis quam earum dolores?',
+    sidebanner: 'https://i.pinimg.com/736x/82/89/b9/8289b92d3367cb3fc0a5b629c78d7fb7.jpg',
+    sidebannertext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum fugit quos in quae, voluptatum, qui eligendi fugiat iusto voluptatibus aut ipsam quam? Aspernatur ullam quam necessitatibus maxime aut dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quasi tempore asperiores, quidem alias, recusandae magnam nemo repudiandae dolorem rem odio! Natus nisi vitae at tempora adipisci et incidunt enim.',
+    sideiconone: 'https://i.pinimg.com/736x/49/8e/fe/498efeae17bca93b2b40e5d299bb472f.jpg',
+    sideicontwo: 'https://i.pinimg.com/736x/38/54/05/38540516a217851e5047e09ee98bb27d.jpg',
+    sideiconstext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ut minima sed ad cupiditate, nihil ab voluptatum blanditiis, incidunt in recusandae, eos veniam at. Magni doloribus neque fugiat at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita exercitationem assumenda officia harum nemo culpa doloribus a sit quas sapiente provident ratione fuga enim, veritatis facere id alias, cupiditate dolore? lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae et eum quibusdam aperiam voluptates, pariatur, vel possimus consequatur eveniet animi quas nam magni, eaque obcaecati molestiae corrupti asperiores nisi.',
+    bgcolor: "#585858",
+    bgcolorart: "#797979"
+  },
+  7: {
+    big: 'https://media.discordapp.net/attachments/1300454898403643464/1508525101836927027/image-Photoroom-103.png?ex=6a3eb97b&is=6a3d67fb&hm=98d3e74e9447dc519ede3ae1fddcdf169ce5a5765aff692228043101755a9e16&=&format=webp&quality=lossless&width=536&height=809',
+    title:'ajdkakf lmaomao wiwi',
+    icon: 'https://i.pinimg.com/736x/80/a4/b3/80a4b3b0725860703d772d74a558a175.jpg',
+    icontext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minus, voluptatum corporis, culpa unde animi delectus dignissimos itaque ad laboriosam laborum exercitationem nihil quam distinctio nostrum nisi. Soluta, recusandae unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum consequuntur deleniti, dolorum obcaecati inventore sed dolor animi distinctio nesciunt! Ex optio est ipsam ab vitae porro incidunt eaque mollitia totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi saepe cum vel placeat in aspernatur dicta repudiandae sunt voluptates rerum blanditiis, eum, hic tempore debitis nihil laboriosam neque ab recusandae.',
+    banner: 'https://i.pinimg.com/736x/b6/81/01/b68101b8720c2bab9594597887d63100.jpg',
+    bannertext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi expedita magnam sed mollitia quos tenetur ad ducimus, eius ut iure, rerum obcaecati odio dicta ea facilis quam earum dolores?',
+    sidebanner: 'https://i.pinimg.com/736x/82/89/b9/8289b92d3367cb3fc0a5b629c78d7fb7.jpg',
+    sidebannertext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum fugit quos in quae, voluptatum, qui eligendi fugiat iusto voluptatibus aut ipsam quam? Aspernatur ullam quam necessitatibus maxime aut dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quasi tempore asperiores, quidem alias, recusandae magnam nemo repudiandae dolorem rem odio! Natus nisi vitae at tempora adipisci et incidunt enim.',
+    sideiconone: 'https://i.pinimg.com/736x/49/8e/fe/498efeae17bca93b2b40e5d299bb472f.jpg',
+    sideicontwo: 'https://i.pinimg.com/736x/38/54/05/38540516a217851e5047e09ee98bb27d.jpg',
+    sideiconstext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ut minima sed ad cupiditate, nihil ab voluptatum blanditiis, incidunt in recusandae, eos veniam at. Magni doloribus neque fugiat at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita exercitationem assumenda officia harum nemo culpa doloribus a sit quas sapiente provident ratione fuga enim, veritatis facere id alias, cupiditate dolore? lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae et eum quibusdam aperiam voluptates, pariatur, vel possimus consequatur eveniet animi quas nam magni, eaque obcaecati molestiae corrupti asperiores nisi.',
+    bgcolor: "#585858",
+    bgcolorart: "#797979"
+  },
+  8: {
+    big: 'https://media.discordapp.net/attachments/1300454898403643464/1508525101836927027/image-Photoroom-103.png?ex=6a3eb97b&is=6a3d67fb&hm=98d3e74e9447dc519ede3ae1fddcdf169ce5a5765aff692228043101755a9e16&=&format=webp&quality=lossless&width=536&height=809',
+    title:'ajdkakf lmaomao wiwi',
+    icon: 'https://i.pinimg.com/736x/80/a4/b3/80a4b3b0725860703d772d74a558a175.jpg',
+    icontext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minus, voluptatum corporis, culpa unde animi delectus dignissimos itaque ad laboriosam laborum exercitationem nihil quam distinctio nostrum nisi. Soluta, recusandae unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum consequuntur deleniti, dolorum obcaecati inventore sed dolor animi distinctio nesciunt! Ex optio est ipsam ab vitae porro incidunt eaque mollitia totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi saepe cum vel placeat in aspernatur dicta repudiandae sunt voluptates rerum blanditiis, eum, hic tempore debitis nihil laboriosam neque ab recusandae.',
+    banner: 'https://i.pinimg.com/736x/b6/81/01/b68101b8720c2bab9594597887d63100.jpg',
+    bannertext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi expedita magnam sed mollitia quos tenetur ad ducimus, eius ut iure, rerum obcaecati odio dicta ea facilis quam earum dolores?',
+    sidebanner: 'https://i.pinimg.com/736x/82/89/b9/8289b92d3367cb3fc0a5b629c78d7fb7.jpg',
+    sidebannertext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum fugit quos in quae, voluptatum, qui eligendi fugiat iusto voluptatibus aut ipsam quam? Aspernatur ullam quam necessitatibus maxime aut dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quasi tempore asperiores, quidem alias, recusandae magnam nemo repudiandae dolorem rem odio! Natus nisi vitae at tempora adipisci et incidunt enim.',
+    sideiconone: 'https://i.pinimg.com/736x/49/8e/fe/498efeae17bca93b2b40e5d299bb472f.jpg',
+    sideicontwo: 'https://i.pinimg.com/736x/38/54/05/38540516a217851e5047e09ee98bb27d.jpg',
+    sideiconstext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore ut minima sed ad cupiditate, nihil ab voluptatum blanditiis, incidunt in recusandae, eos veniam at. Magni doloribus neque fugiat at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita exercitationem assumenda officia harum nemo culpa doloribus a sit quas sapiente provident ratione fuga enim, veritatis facere id alias, cupiditate dolore? lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis recusandae et eum quibusdam aperiam voluptates, pariatur, vel possimus consequatur eveniet animi quas nam magni, eaque obcaecati molestiae corrupti asperiores nisi.',
+    bgcolor: "#585858",
+    bgcolorart: "#797979"
   }
 };
 
