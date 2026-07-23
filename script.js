@@ -8,7 +8,9 @@ const forwBtn = document.getElementById("forward");
 function getCurrentMain() {
     if (!mainUno.classList.contains('hidden')) return mainUno;
     if (!mainDos.classList.contains('hidden')) return mainDos;
-    return mainTres;
+    if (!mainTres.classList.contains('hidden')) return mainTres;
+    if (!mainCuatro.classList.contains('hidden')) return mainCuatro;
+    return mainCinco;
 }
 
 
@@ -147,9 +149,9 @@ const pages = {
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestiae, alias aliquid possimus natus tempore necessitatibus assumenda maxime incidunt debitis, accusamus expedita doloremque aspernatur nisi reiciendis dolorum vel voluptas sint.'
   },
   4: {
-    big: 'https://media.discordapp.net/attachments/1300454898403643464/1516461026756001873/image.png?ex=6a3e9763&is=6a3d45e3&hm=42afe564c236c7ab9a1a37649f2189db18c2d6ac19c3aa7945bff9b560655bc2&=&format=webp&quality=lossless&width=573&height=810',
+    big: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f6ba7c18-116f-4e98-8876-4cb886c57efd/djbj5f9-544d7aa2-60b8-488d-8b95-6fb1913c674d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9mNmJhN2MxOC0xMTZmLTRlOTgtODg3Ni00Y2I4ODZjNTdlZmQvZGpiajVmOS01NDRkN2FhMi02MGI4LTQ4OGQtOGI5NS02ZmIxOTEzYzY3NGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XAWgAn9xMfjPaWWo0uCRM5XgkSaJnXearQmE4tCIIhs',
     title:'TILL DEATHLY LOVE',
-    icon: 'https://media.discordapp.net/attachments/1300438987101438100/1514936285536587786/8824f17be9f0d1ba846438fdb85228b1.png?ex=6a3e515c&is=6a3cffdc&hm=b7bea3ee5bdd0d9816358c2a21d89d453f5f9aa5edc9c6634358569de907ab1a&=&format=webp&quality=lossless&width=810&height=810',
+    icon: 'https://i.pinimg.com/736x/a4/79/aa/a479aa018d520fefc322af507156ff8b.jpg',
     icontext: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat tincidunt felis vel imperdiet. Aenean ut congue enim, at mollis elit. Praesent eleifend mattis ullamcorper. Integer ornare metus nisi, tempor mattis arcu lobortis a. Proin tincidunt turpis nisi. Vestibulum nec ligula purus. Nulla ex ligula, fermentum in imperdiet eget, imperdiet ac mauris. Vivamus efficitur, justo a commodo fermentum, justo ligula efficitur lectus, eu dignissim magna neque a neque. Integer pulvinar mollis dictum. Nunc tristique est et tincidunt vulputate. Morbi risus elit, auctor quis consectetur at, rhoncus sed ex. Sed condimentum imperdiet odio, ac venenatis lorem malesuada vitae. Nullam porttitor mi id ligula bibendum condimentum. Curabitur libero tellus, lacinia quis neque porta, mattis tempus metus. Fusce quis rutrum nunc. Fusce ultrices posuere ex, id ullamcorper augue facilisis id.',
     text: 'Duis non mollis tortor, at viverra magna. Sed imperdiet vel leo interdum efficitur. Proin laoreet scelerisque dolor ut fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed molestie sed libero eget sollicitudin. Phasellus tempus, dolor at euismod finibus, lorem dolor fermentum diam, interdum aliquet libero arcu vitae turpis. Suspendisse potenti. Aliquam cursus faucibus magna in hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec massa ligula, mattis auctor porta a, convallis et odio. Pellentesque laoreet commodo dolor ac fermentum. Aenean et lorem ut lacus finibus varius non sed dolor. In ultrices, ipsum a hendrerit blandit, libero mauris pretium orci, nec semper elit lacus rhoncus felis. Suspendisse sed volutpat libero. Fusce in neque nibh. Donec iaculis justo ligula, vitae bibendum tortor gravida ac.',
     banner: 'https://i.pinimg.com/736x/19/82/3a/19823a875e87a5cf3fa195122f22b815.jpg',
@@ -239,7 +241,7 @@ function change(type) {
   setTimeout(() => {
     currentPage = type;
 
-    const page = pages[type];
+    let page = pages[type];
 
     document.getElementById('page-image').src = page.img;
     document.getElementById('page-title').textContent = page.title;
